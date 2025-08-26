@@ -1,0 +1,28 @@
+# .gitignore for .NET Core + Angular
+
+# Visual Studio and build outputs
+bin/
+obj/
+.vs/
+
+# User-specific files
+*.user
+*.suo
+
+# ASP.NET Core files
+appsettings.Development.json
+
+# npm packages and logs
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular build artifacts
+dist/
+out-tsc/
+
+# JetBrains Rider
+.idea/
+
+# Others
+*.DS_Store

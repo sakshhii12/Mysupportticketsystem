@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Mysupportticketsystem", "Mysupportticketsystem\Mysupportticketsystem.esproj", "{F5A6428E-8236-2253-A510-03A488D4A9B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MysupportticketsystemBackend", "MysupportticketsystemBackend\MysupportticketsystemBackend.csproj", "{1541EEF3-9F3D-4B5F-A834-55346E5331A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A6428E-8236-2253-A510-03A488D4A9B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A6428E-8236-2253-A510-03A488D4A9B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A6428E-8236-2253-A510-03A488D4A9B9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F5A6428E-8236-2253-A510-03A488D4A9B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A6428E-8236-2253-A510-03A488D4A9B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A6428E-8236-2253-A510-03A488D4A9B9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1541EEF3-9F3D-4B5F-A834-55346E5331A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1541EEF3-9F3D-4B5F-A834-55346E5331A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1541EEF3-9F3D-4B5F-A834-55346E5331A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1541EEF3-9F3D-4B5F-A834-55346E5331A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E18AD648-FB31-4EF0-9506-85CF451C08CB}
+	EndGlobalSection
+EndGlobal
