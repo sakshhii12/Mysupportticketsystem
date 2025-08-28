@@ -1,0 +1,31 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 220px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.content {
+  padding: 24px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-nav-list .mat-icon {
+  margin-right: 15px;
+}
+
+/* This style will be applied to the active navigation link */
+.active-link {
+  background-color: rgba(63, 81, 181, 0.1); /* Using primary color with low opacity */
+}
