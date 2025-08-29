@@ -16,12 +16,16 @@
     <mat-toolbar color="primary">
       <span>Customer Support System</span>
       <span class="spacer"></span>
-      <button mat-icon-button aria-label="Logout button">
+      <span class="user-role" [matTooltip]="userRoleTooltip">
+        <mat-icon>{{ userRoleIcon }}</mat-icon>
+        <span class="role-name">{{ userRoleTooltip }}</span>
+      </span>
+      <button mat-icon-button aria-label="Logout button" (click)="logout()">
         <mat-icon>logout</mat-icon>
       </button>
     </mat-toolbar>
     <main class="content">
-      <!-- This is where our pages (Dashboard, TicketList) will be rendered -->
+      
       <router-outlet></router-outlet>
     </main>
   </mat-sidenav-content>

@@ -1,1 +1,88 @@
-<p>ticket-list works!</p>
+<div class="ticket-list-container">
+  <div class="header">
+    <h2>My Support Tickets</h2>
+    <button mat-raised-button color="primary" (click)="openCreateTicketDialog()">
+      <mat-icon>add</mat-icon> New Ticket
+    </button>
+  </div>
+
+  <!-- Filter Form -->
+  <form [formGroup]="filterForm" class="filter-form mat-elevation-z2">
+    <mat-form-field appearance="outline">
+      <mat-label>Search</mat-label>
+      <input matInput formControlName="searchTerm" placeholder="Search...">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="status">
+        <mat-option value="">All</mat-option>
+        <mat-option *ngFor="let status of statuses" [value]="status">{{status}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Priority</mat-label>
+      <mat-select formControlName="priority">
+        <mat-option value="">All</mat-option>
+        <mat-option *ngFor="let priority of priorities" [value]="priority">{{priority}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-stroked-button (click)="clearFilters()">Clear</button>
+  </form>
+
+ 
+  <div class="table-container mat-elevation-z2">
+    <mat-table [dataSource]="dataSource" matSort>
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+        <mat-cell *matCellDef="let ticket"> {{ticket.id}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+        <mat-cell *matCellDef="let ticket"> {{ticket.title}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+        <mat-cell *matCellDef="let ticket"> {{ticket.status}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="priority">
+        <mat-header-cell *matHeaderCellDef> Priority </mat-header-cell>
+        <mat-cell *matCellDef="let ticket"> {{ticket.priority}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="userEmail">
+        <mat-header-cell *matHeaderCellDef> Created By </mat-header-cell>
+        <mat-cell *matCellDef="let ticket"> {{ticket.userEmail}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="createdAt">
+        <mat-header-cell *matHeaderCellDef> Created On </mat-header-cell>
+        <mat-cell *matCellDef="let ticket"> {{ticket.createdAt | date:'short'}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+        <mat-cell *matCellDef="let ticket">
+          <button mat-icon-button color="primary" (click)="openEditTicketDialog(ticket)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button *ngIf="isAdmin" mat-icon-button color="accent" (click)="assignTicket(ticket.id)">
+            <mat-icon>person_add</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+    <div *ngIf="!dataSource.data || dataSource.data.length === 0" class="no-tickets-message">
+      No tickets found.
+    </div>
+  </div>
+</div>

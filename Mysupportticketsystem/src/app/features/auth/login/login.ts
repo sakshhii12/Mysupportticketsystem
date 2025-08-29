@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
 
 import { AngularMaterialModule } from '../../../angular-material.module';
-import { AuthService } from '../../../core/services/auth'; // <-- Adjusted import path
+import { AuthService } from '../../../core/services/auth'; 
 
 @Component({
   selector: 'app-login',
@@ -16,8 +16,8 @@ import { AuthService } from '../../../core/services/auth'; // <-- Adjusted impor
     ReactiveFormsModule,
     AngularMaterialModule
   ],
-  templateUrl: './login.html', // Corresponds to your login.html file
-  styleUrls: ['./login.css']    // Corresponds to your login.css file
+  templateUrl: './login.html', 
+  styleUrls: ['./login.css']    
 })
 export class Login {
   loginForm: FormGroup;
@@ -46,7 +46,7 @@ export class Login {
         this.router.navigate(['/dashboard']);
       },
       error: (err) => {
-        // Check if there is a specific error message from the backend
+        
         const errorMessage = err.error?.message || 'Login failed. Please check your email and password.';
         this.toastr.error(errorMessage, 'Error');
       }

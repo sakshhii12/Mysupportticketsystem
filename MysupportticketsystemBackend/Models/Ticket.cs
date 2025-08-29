@@ -12,7 +12,7 @@ namespace MysupportticketsystemBackend.Models
         public int Id { get; set; }
 
 
-        [Required] //this column cannot be null.
+        [Required] 
         public string Title { get; set; }
 
         [Required]
@@ -23,7 +23,9 @@ namespace MysupportticketsystemBackend.Models
         public TicketCategory Category { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        
+        public string? AssignedToAgentId { get; set; }
+        public ApplicationUser? AssignedToAgent { get; set; }
+
         public string UserId { get; set; }
         public ApplicationUser User { get; set; }
     }

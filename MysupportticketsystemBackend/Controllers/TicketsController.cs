@@ -16,15 +16,13 @@ namespace MysupportticketsystemBackend.Controllers
     [Authorize]
     public class TicketsController : ControllerBase
     {
-        // Private fields to hold the services
+        
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IMapper _mapper;
         private readonly ILogger<TicketsController> _logger;
 
-        // *** THIS IS THE CONSTRUCTOR THAT WAS MISSING ***
-        // This method receives the required services via Dependency Injection
-        // and assigns them to the private fields.
+      
         public TicketsController(
             ApplicationDbContext context,
             UserManager<ApplicationUser> userManager,
@@ -37,27 +35,40 @@ namespace MysupportticketsystemBackend.Controllers
             _logger = logger;
         }
 
-        // GET: api/Tickets (with filtering, searching, and sorting)
+        // GET: api/Tickets 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TicketDto>>> GetMyTickets([FromQuery] TicketQueryDto queryDto)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); 
 
-            // Start building the query against the database
-            IQueryable<Ticket> query = _context.Tickets
-                .Include(t => t.User)
-                .Where(t => t.UserId == userId);
+            IQueryable<Ticket> query = _context.Tickets.Include(t => t.User);
 
-            // Apply the dynamic filtering and sorting from our Extension Methods
+           
+
+            if (User.IsInRole("Admin"))
+            {
+                
+                _logger.LogInformation("Admin user {UserId} is fetching all tickets.", userId);
+            }
+            else if (User.IsInRole("Agent"))
+            {
+               
+                _logger.LogInformation("Agent user {UserId} is fetching their assigned tickets.", userId);
+                query = query.Where(t => t.AssignedToAgentId == userId);
+            }
+            else 
+            {
+                
+                _logger.LogInformation("User {UserId} is fetching their own tickets.", userId);
+                query = query.Where(t => t.UserId == userId);
+            }
             query = query.WhereIfStatus(queryDto.Status)
                          .WhereIfPriority(queryDto.Priority)
                          .Search(queryDto.SearchTerm)
                          .ApplySort(queryDto.SortBy, queryDto.SortOrder);
 
-            // Execute the query to get the results from the database
             var tickets = await query.ToListAsync();
 
-            // Map the results to our DTO to send back to the client
             return _mapper.Map<List<TicketDto>>(tickets);
         }
 
@@ -69,7 +80,7 @@ namespace MysupportticketsystemBackend.Controllers
 
             var ticket = _mapper.Map<Ticket>(createTicketDto);
 
-            // Set server-side properties
+            
             ticket.UserId = userId;
             ticket.Status = TicketStatus.Open;
             ticket.CreatedAt = DateTime.UtcNow;
@@ -77,29 +88,37 @@ namespace MysupportticketsystemBackend.Controllers
             _context.Tickets.Add(ticket);
             await _context.SaveChangesAsync();
 
-            // Log the creation of the ticket
+           
             _logger.LogInformation("New ticket created. TicketId: {TicketId}, UserId: {UserId}", ticket.Id, userId);
 
-            // Reload the User navigation property to include the email in the response
+           
             await _context.Entry(ticket).Reference(t => t.User).LoadAsync();
 
             return Ok(_mapper.Map<TicketDto>(ticket));
         }
 
-        // PUT: api/Tickets/5
+        // PUT: api/Tickets/id
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTicket(int id, [FromBody] UpdateTicketDto updateTicketDto)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var ticket = await _context.Tickets.FirstOrDefaultAsync(t => t.Id == id && t.UserId == userId);
+            var ticket = await _context.Tickets.FindAsync(id);
 
             if (ticket == null)
             {
-                return NotFound("Ticket not found or you do not have permission to edit it.");
+                return NotFound("Ticket not found."); 
             }
 
-            // Manually apply updates for fields that were provided in the request
+            
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!User.IsInRole("Admin") && ticket.UserId != userId)
+            {
+                
+                return Forbid(); 
+            }
+            
+
+            
             if (!string.IsNullOrEmpty(updateTicketDto.Title))
             {
                 ticket.Title = updateTicketDto.Title;
@@ -118,14 +137,18 @@ namespace MysupportticketsystemBackend.Controllers
             }
             if (!string.IsNullOrEmpty(updateTicketDto.Status))
             {
-                ticket.Status = Enum.Parse<TicketStatus>(updateTicketDto.Status, true);
+                
+                if (User.IsInRole("Admin"))
+                {
+                    ticket.Status = Enum.Parse<TicketStatus>(updateTicketDto.Status, true);
+                }
             }
 
             await _context.SaveChangesAsync();
             return NoContent();
         }
 
-        // PATCH: api/Tickets/5/close
+        // PATCH: api/Tickets/close
         [HttpPatch("{id}/close")]
         public async Task<IActionResult> CloseTicket(int id)
         {
@@ -137,7 +160,7 @@ namespace MysupportticketsystemBackend.Controllers
                 return NotFound("Ticket not found or you do not have permission to close it.");
             }
 
-            // Corrected the casing from .closed to .Closed
+           
             ticket.Status = TicketStatus.Closed;
             await _context.SaveChangesAsync();
 

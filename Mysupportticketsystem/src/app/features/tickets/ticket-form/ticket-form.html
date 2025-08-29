@@ -1,1 +1,39 @@
-<p>ticket-form works!</p>
+<h1 mat-dialog-title>New Support Ticket</h1>
+<div mat-dialog-content>
+  <form [formGroup]="ticketForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" placeholder="A brief title for your issue">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category">
+        <mat-option *ngFor="let cat of categories" [value]="cat">{{cat}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Priority</mat-label>
+      <mat-select formControlName="priority">
+        <mat-option *ngFor="let prio of priorities" [value]="prio">{{prio}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" rows="5" placeholder="Describe your issue in detail..."></textarea>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="isAdmin" appearance="outline">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="status">
+        <mat-option *ngFor="let stat of statuses" [value]="stat">{{stat}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-stroked-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="ticketForm.invalid" (click)="onSubmit()">Create Ticket</button>
+</div>

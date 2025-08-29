@@ -1,0 +1,17 @@
+.filter-form {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+mat-table {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}

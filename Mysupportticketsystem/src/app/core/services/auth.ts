@@ -1,5 +1,3 @@
-// In src/app/core/services/auth.ts
-
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
@@ -8,10 +6,9 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
-// The class name AuthService is descriptive and fine, even if the file is auth.ts
 export class AuthService {
-  // The URL to your backend's auth controller
-  private apiUrl = '/api/auth'; // The proxy will handle the rest
+  
+  private apiUrl = '/api/auth'; 
   private readonly TOKEN_KEY = 'access_token';
   private readonly REFRESH_TOKEN_KEY = 'refresh_token';
 
@@ -26,7 +23,7 @@ export class AuthService {
 
   // Method to handle user registration
   register(userInfo: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/register`, userInfo);
+    return this.http.post(`${this.apiUrl}/register`, userInfo, { responseType: 'text' });
   }
 
   // Method to log the user out
@@ -36,8 +33,29 @@ export class AuthService {
     this.router.navigate(['/login']);
   }
 
-  // --- Token Helper Methods ---
+  private getUserRoles(): string[] | null {
+    const token = this.getToken();
+    if (!token) {
+      return null;
+    }
+    const payload = JSON.parse(atob(token.split('.')[1]));
+    const roles = payload['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
 
+    if (!roles) {
+      return [];
+    }
+    return Array.isArray(roles) ? roles : [roles];
+  }
+
+  public isAdmin(): boolean {
+    const roles = this.getUserRoles();
+    return roles ? roles.includes('Admin') : false;
+  }
+
+  public isAgent(): boolean {
+    const roles = this.getUserRoles();
+    return roles ? roles.includes('Agent') : false;
+  }
   // Store tokens in localStorage
   private setTokens(token: string, refreshToken: string): void {
     localStorage.setItem(this.TOKEN_KEY, token);

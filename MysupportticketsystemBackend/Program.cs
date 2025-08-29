@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using MysupportticketsystemBackend.Data;
 using MysupportticketsystemBackend.Models;
-using Serilog; // We need this
+using Serilog;
+//using Microsoft.AspNetCore.SpaServices.AngularCli;
 using System.Text;
 
-// --- SERILOG FULL SETUP ---
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateBootstrapLogger();
@@ -54,6 +54,10 @@ try
     });
 
     builder.Services.AddControllers();
+    //builder.Services.AddSpaStaticFiles(configuration =>
+    //{
+    //    configuration.RootPath = "../Mysupportticketsystem";
+    //});
     builder.Services.AddAutoMapper(typeof(Program));
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
@@ -68,12 +72,27 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-
+    //app.UseStaticFiles(); 
+    //app.UseSpaStaticFiles();
     app.UseHttpsRedirection();
     app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();
+
+
+    //app.UseSpa(spa =>
+    //{
+    //    spa.Options.SourcePath = "../Mysupportticketsystem"; 
+
+    //    if (app.Environment.IsDevelopment())
+    //    {
+    //        spa.UseProxyToSpaDevelopmentServer("http://localhost:5085"); 
+    //    }
+    //});
+
+    await DbSeeder.SeedRolesAndUsersAsync(app);
     app.Run();
+
 }
 catch (Exception ex)
 {

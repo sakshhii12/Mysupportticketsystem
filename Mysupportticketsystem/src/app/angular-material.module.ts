@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -29,6 +29,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatSortModule,
     MatDialogModule,
     MatSelectModule,
+    MatTooltipModule,
   ]
 })
 export class AngularMaterialModule { }

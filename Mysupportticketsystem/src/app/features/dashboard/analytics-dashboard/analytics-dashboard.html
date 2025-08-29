@@ -1,1 +1,71 @@
-<p>analytics-dashboard works!</p>
+<div class="dashboard-container">
+  <h1>Support Dashboard</h1>
+
+ 
+  <div class="summary-cards">
+    <mat-card class="summary-card">
+      <mat-card-header>
+        <mat-card-title>{{ totalTickets }}</mat-card-title>
+        <mat-card-subtitle>Total Tickets</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+    <mat-card class="summary-card">
+      <mat-card-header>
+        <mat-card-title>{{ openTickets }}</mat-card-title>
+        <mat-card-subtitle>Open Tickets</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+    <mat-card class="summary-card">
+      <mat-card-header>
+        <mat-card-title>{{ resolvedTickets }}</mat-card-title>
+        <mat-card-subtitle>Resolved Tickets</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <div *ngIf="!isLoading; else loadingTemplate" class="charts-container">
+
+  
+    <mat-card class="chart-card">
+      <mat-card-content>
+        <h2>Tickets by Category</h2>
+        <div *ngIf="categoryChartData.datasets[0].data.length > 0; else noDataMessage">
+          <canvas baseChart
+                  [datasets]="categoryChartData.datasets"
+                  [labels]="categoryChartData.labels"
+                  [type]="barChartType"
+                  [options]="chartOptions"
+                  [legend]="chartLegend">
+          </canvas>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+   
+    <mat-card class="chart-card">
+      <mat-card-content>
+        <h2>Tickets by Priority</h2>
+        <div *ngIf="priorityChartData.datasets[0].data.length > 0; else noDataMessage">
+          <canvas baseChart
+                  [datasets]="priorityChartData.datasets"
+                  [labels]="priorityChartData.labels"
+                  [type]="pieChartType"
+                  [options]="chartOptions"
+                  [legend]="chartLegend">
+          </canvas>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+ 
+  <ng-template #noDataMessage>
+    <p class="no-data">No ticket data available to display chart.</p>
+  </ng-template>
+
+ 
+  <ng-template #loadingTemplate>
+    <p class="no-data">Loading dashboard data...</p>
+  </ng-template>
+
+</div>

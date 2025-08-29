@@ -21,24 +21,22 @@ namespace MysupportticketsystemBackend.Controllers
             _context = context;
         }
 
-        // This is the NEW, corrected GetAnalytics method
+       
         [HttpGet("analytics")]
         public async Task<ActionResult<DashboardAnalyticsDto>> GetAnalytics()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            // Get the base set of tickets for the user first.
-            // We use ToListAsync() here to execute the query and bring the data into memory.
+            
             var userTickets = await _context.Tickets
                                             .Where(t => t.UserId == userId)
                                             .ToListAsync();
 
-            // Now that the data is in memory, we can perform complex operations on it using LINQ to Objects,
-            // which can handle anything, unlike the EF Core translator.
+            
 
             if (!userTickets.Any())
             {
-                // If the user has no tickets, return a zeroed-out DTO immediately.
+                
                 return Ok(new DashboardAnalyticsDto
                 {
                     TotalTickets = 0,
@@ -50,7 +48,7 @@ namespace MysupportticketsystemBackend.Controllers
                 });
             }
 
-            // Now, perform all the calculations on the in-memory list.
+            
             var analyticsDto = new DashboardAnalyticsDto
             {
                 TotalTickets = userTickets.Count,

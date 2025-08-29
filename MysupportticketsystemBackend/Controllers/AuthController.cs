@@ -66,7 +66,7 @@ namespace MysupportticketsystemBackend.Controllers
             if (user != null && await _userManager.CheckPasswordAsync(user, loginDto.Password))
             {
                
-                var tokenString = GenerateJwtToken(user);
+                var tokenString = await GenerateJwtToken(user);
 
                 user.RefreshToken = Guid.NewGuid().ToString();
                 user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
@@ -81,16 +81,24 @@ namespace MysupportticketsystemBackend.Controllers
             return Unauthorized("Invalid email or password.");
         }
 
-       
-        private string GenerateJwtToken(ApplicationUser user)
+
+        private async Task<string> GenerateJwtToken(ApplicationUser user)
         {
             var authClaims = new List<Claim>
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.Id), 
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()) 
-            };
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+    };
 
-           
+   
+            // Get the roles for the user 
+            var userRoles = await _userManager.GetRolesAsync(user);
+            foreach (var role in userRoles)
+            {
+                authClaims.Add(new Claim(ClaimTypes.Role, role));
+            }
+            
+
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
 
             var token = new JwtSecurityToken(
@@ -101,7 +109,6 @@ namespace MysupportticketsystemBackend.Controllers
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
             );
 
-           
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
