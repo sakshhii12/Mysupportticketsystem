@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CsvHelper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,10 @@ using MysupportticketsystemBackend.Data;
 using MysupportticketsystemBackend.Extensions;
 using MysupportticketsystemBackend.Models;
 using MysupportticketsystemBackend.Models.DTOs;
+using System.Globalization;
+using System.IO;
 using System.Security.Claims;
+using System.Text;
 
 namespace MysupportticketsystemBackend.Controllers
 {
@@ -102,8 +106,8 @@ namespace MysupportticketsystemBackend.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTicket(int id, [FromBody] UpdateTicketDto updateTicketDto)
         {
-            var ticket = await _context.Tickets.FindAsync(id);
-
+            
+            var ticket = await _context.Tickets.Include(t => t.User).FirstOrDefaultAsync(t => t.Id == id);
             if (ticket == null)
             {
                 return NotFound("Ticket not found."); 
@@ -111,6 +115,9 @@ namespace MysupportticketsystemBackend.Controllers
 
             
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            bool isAdmin = User.IsInRole("Admin");
+            bool isOwner = ticket.UserId == userId;
+            bool isAssignedAgent = ticket.AssignedToAgentId == userId;
             if (!User.IsInRole("Admin") && ticket.UserId != userId)
             {
                 
@@ -135,15 +142,32 @@ namespace MysupportticketsystemBackend.Controllers
             {
                 ticket.Category = Enum.Parse<TicketCategory>(updateTicketDto.Category, true);
             }
+            
             if (!string.IsNullOrEmpty(updateTicketDto.Status))
             {
                 
-                if (User.IsInRole("Admin"))
+                if (isAdmin || isAssignedAgent)
                 {
-                    ticket.Status = Enum.Parse<TicketStatus>(updateTicketDto.Status, true);
+                    var oldStatus = ticket.Status; 
+                    var newStatus = Enum.Parse<TicketStatus>(updateTicketDto.Status, true);
+
+                    
+                    if (oldStatus != newStatus)
+                    {
+                      
+                        ticket.Status = newStatus;
+
+                        // EMAIL SIMULATION 
+                        _logger.LogInformation(
+                            "EMAIL SIMULATION: Status for Ticket #{TicketId} changed from {OldStatus} to {NewStatus}. Notifying user {UserEmail}.",
+                            ticket.Id,
+                            oldStatus.ToString(),
+                            newStatus.ToString(),
+                            ticket.User.Email 
+                        );
+                    }
                 }
             }
-
             await _context.SaveChangesAsync();
             return NoContent();
         }
@@ -165,6 +189,44 @@ namespace MysupportticketsystemBackend.Controllers
             await _context.SaveChangesAsync();
 
             return Ok("Ticket successfully closed.");
+        }
+        //GET:api/tickets/export
+        [HttpGet("export")]
+        public async Task<IActionResult> ExportTicketsToCsv([FromQuery] TicketQueryDto queryDto)
+        {
+            
+            IQueryable<Ticket> query = _context.Tickets.Include(t => t.User);
+
+            if (!User.IsInRole("Admin"))
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                query = query.Where(t => t.UserId == userId);
+            }
+
+            query = query.WhereIfStatus(queryDto.Status)
+                         .WhereIfPriority(queryDto.Priority)
+                         .Search(queryDto.SearchTerm)
+                         .ApplySort(queryDto.SortBy, queryDto.SortOrder);
+
+            var tickets = await query.ToListAsync();
+
+            var recordsToExport = _mapper.Map<List<TicketDto>>(tickets);
+
+            using var memoryStream = new MemoryStream();
+            
+            using (var writer = new StreamWriter(memoryStream, Encoding.UTF8))
+            
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            {
+               
+                csv.WriteRecords(recordsToExport);
+            }
+
+           
+            var fileName = $"TicketExport_{DateTime.UtcNow:yyyyMMdd_HHmmss}.csv";
+
+            
+            return File(memoryStream.ToArray(), "text/csv", fileName);
         }
     }
 }

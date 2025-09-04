@@ -20,7 +20,14 @@ export class AnalyticsDashboard implements OnInit {
   resolvedTickets = 0;
   public categoryChartData: any = {
     labels: [],
-    datasets: [{ data: [], label: 'Tickets by Category', backgroundColor: '#3f51b5' }]
+    datasets: [{
+      data: [], label: 'Tickets by Category',
+      backgroundColor: [
+        '#3f51b5', 
+        '#ff4081', 
+        '#4caf50', 
+        '#ff9800', 
+      ] }]
   };
   public priorityChartData: any = {
     labels: [],

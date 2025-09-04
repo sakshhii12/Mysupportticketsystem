@@ -1,0 +1,19 @@
+2025-09-04 10:59:32.467 +05:30 [INF] Roles seeded successfully.
+2025-09-04 10:59:33.104 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-04 10:59:33.262 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-04 10:59:33.270 +05:30 [INF] Hosting environment: Development
+2025-09-04 10:59:33.280 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-04 10:59:34.139 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-04 10:59:34.837 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 705.9966 ms
+2025-09-04 10:59:35.363 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 157.6173 ms
+2025-09-04 10:59:36.741 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 79.8543 ms
+2025-09-04 10:59:36.906 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 15.6632 ms
+2025-09-04 10:59:41.328 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-04 10:59:41.443 +05:30 [INF] HTTP GET /api/tickets responded 200 in 295.2118 ms
+2025-09-04 10:59:41.772 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-04 10:59:41.797 +05:30 [INF] HTTP GET /api/tickets responded 200 in 30.9618 ms
+2025-09-04 10:59:47.452 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 6.5676 ms
+2025-09-04 11:00:10.415 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 105.1092 ms
+2025-09-04 11:00:10.754 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-04 11:00:10.799 +05:30 [INF] HTTP GET /api/tickets responded 200 in 47.8314 ms
+2025-09-04 11:00:10.811 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 40.6052 ms

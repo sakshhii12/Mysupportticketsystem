@@ -1,6 +1,6 @@
-<h1 mat-dialog-title>New Support Ticket</h1>
+<h1 mat-dialog-title>Customer Support Ticket</h1>
 <div mat-dialog-content>
-  <form [formGroup]="ticketForm">
+  <form [formGroup]="ticketForm" class="ticket-form-container">
     <mat-form-field appearance="outline">
       <mat-label>Title</mat-label>
       <input matInput formControlName="title" placeholder="A brief title for your issue">
@@ -20,9 +20,9 @@
       </mat-select>
     </mat-form-field>
 
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="description-field">
       <mat-label>Description</mat-label>
-      <textarea matInput formControlName="description" rows="5" placeholder="Describe your issue in detail..."></textarea>
+      <textarea matInput formControlName="description" placeholder="Describe your issue in detail..."></textarea>
     </mat-form-field>
 
     <mat-form-field *ngIf="isAdmin" appearance="outline">
@@ -33,6 +33,7 @@
     </mat-form-field>
   </form>
 </div>
+
 <div mat-dialog-actions align="end">
   <button mat-stroked-button (click)="onCancel()">Cancel</button>
   <button mat-raised-button color="primary" [disabled]="ticketForm.invalid" (click)="onSubmit()">Create Ticket</button>

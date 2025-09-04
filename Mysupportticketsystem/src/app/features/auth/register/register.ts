@@ -17,7 +17,7 @@ import { AuthService } from '../../../core/services/auth';
     AngularMaterialModule
   ],
   templateUrl: './register.html',
-  styleUrls: ['./register.css']
+  styleUrls: ['./register.css','../auth.css']
 })
 export class Register {
   registerForm: FormGroup;

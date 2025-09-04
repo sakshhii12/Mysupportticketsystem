@@ -13,7 +13,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatMenuModule } from '@angular/material/menu';
+import { ConfirmDialog } from './shared/confirm-dialog/confirm-dialog';
+import { AssignAgentDialog } from './features/tickets/assign-agent-dialog/assign-agent-dialog';
 @NgModule({
   exports: [
     MatToolbarModule,
@@ -30,6 +33,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatDialogModule,
     MatSelectModule,
     MatTooltipModule,
-  ]
+    MatProgressSpinnerModule,
+    MatMenuModule
+  ],
 })
 export class AngularMaterialModule { }

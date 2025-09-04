@@ -1,0 +1,104 @@
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f4f8;
+}
+
+.auth-card {
+  display: flex;
+  width: 100%;
+  max-width: 960px; 
+  height: 600px;
+  margin: 20px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*  The Left Panel  */
+.auth-illustration-panel {
+  flex-basis: 45%;
+  background-color: #3f51b5; 
+  color: white;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+  .auth-illustration-panel h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .auth-illustration-panel p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 32px;
+    max-width: 300px;
+  }
+
+  .auth-illustration-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*  The Right Panel  */
+.auth-form-panel {
+  flex-basis: 55%; 
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 380px;
+}
+
+  .form-wrapper h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  .form-wrapper p {
+    color: #666;
+    margin-bottom: 32px;
+  }
+
+  .form-wrapper form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-wrapper button {
+    margin-top: 16px;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+
+@media (max-width: 900px) {
+  .auth-illustration-panel {
+    display: none; 
+  }
+
+  .auth-form-panel {
+    flex-basis: 100%; 
+  }
+
+  .auth-card {
+    height: auto;
+  }
+}

@@ -17,7 +17,7 @@ import { AuthService } from '../../../core/services/auth';
     AngularMaterialModule
   ],
   templateUrl: './login.html', 
-  styleUrls: ['./login.css']    
+  styleUrls: ['./login.css','../auth.css']    
 })
 export class Login {
   loginForm: FormGroup;

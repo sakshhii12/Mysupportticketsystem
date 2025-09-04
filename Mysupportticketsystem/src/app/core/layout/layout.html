@@ -1,32 +1,44 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" mode="side" opened>
+
+  <!-- SIDENAV: 'mode' is 'side', 'opened' is 'false' by default -->
+  <mat-sidenav #drawer class="sidenav" mode="side" [opened]="false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/dashboard" routerLinkActive="active-link">
-        <mat-icon>dashboard</mat-icon>
+        <mat-icon>analytics</mat-icon>
         <span>Dashboard</span>
       </a>
       <a mat-list-item routerLink="/tickets" routerLinkActive="active-link">
-        <mat-icon>confirmation_number</mat-icon>
+        <mat-icon>style</mat-icon>
         <span>Tickets</span>
       </a>
     </mat-nav-list>
   </mat-sidenav>
+
+  <!-- MAIN CONTENT -->
   <mat-sidenav-content>
     <mat-toolbar color="primary">
+      <!-- The hamburger button is now ALWAYS visible -->
+      <button type="button"
+              aria-label="Toggle sidenav"
+              mat-icon-button
+              (click)="drawer.toggle()">
+        <!-- This directly toggles the drawer -->
+        <mat-icon>menu</mat-icon>
+      </button>
+
       <span>Customer Support System</span>
       <span class="spacer"></span>
       <span class="user-role" [matTooltip]="userRoleTooltip">
         <mat-icon>{{ userRoleIcon }}</mat-icon>
-        <span class="role-name">{{ userRoleTooltip }}</span>
       </span>
-      <button mat-icon-button aria-label="Logout button" (click)="logout()">
+      <button mat-icon-button (click)="logout()" aria-label="Logout button">
         <mat-icon>logout</mat-icon>
       </button>
     </mat-toolbar>
     <main class="content">
-      
       <router-outlet></router-outlet>
     </main>
   </mat-sidenav-content>
+
 </mat-sidenav-container>

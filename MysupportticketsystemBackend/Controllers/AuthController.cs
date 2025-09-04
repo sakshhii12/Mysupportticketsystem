@@ -51,8 +51,9 @@ namespace MysupportticketsystemBackend.Controllers
               
                 return BadRequest(result.Errors);
             }
+            await _userManager.AddToRoleAsync(newUser, "User");
 
-            return Ok("User created successfully!");
+            return Ok(new { message = "User created successfully!" });
         }
 
         
@@ -95,6 +96,7 @@ namespace MysupportticketsystemBackend.Controllers
             var userRoles = await _userManager.GetRolesAsync(user);
             foreach (var role in userRoles)
             {
+
                 authClaims.Add(new Claim(ClaimTypes.Role, role));
             }
             

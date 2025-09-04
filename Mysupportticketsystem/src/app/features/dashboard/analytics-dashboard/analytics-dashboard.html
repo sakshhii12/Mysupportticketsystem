@@ -1,5 +1,5 @@
 <div class="dashboard-container">
-  <h1>Support Dashboard</h1>
+  <h1>Customer Support Dashboard</h1>
 
  
   <div class="summary-cards">
@@ -29,15 +29,19 @@
       <mat-card-content>
         <h2>Tickets by Category</h2>
         <div *ngIf="categoryChartData.datasets[0].data.length > 0; else noDataMessage">
-          <canvas baseChart
-                  [datasets]="categoryChartData.datasets"
-                  [labels]="categoryChartData.labels"
-                  [type]="barChartType"
-                  [options]="chartOptions"
-                  [legend]="chartLegend">
-          </canvas>
-        </div>
-      </mat-card-content>
+          <div class="chart-wrapper">
+            <canvas baseChart
+                    width="350"
+                    height="100"
+                    [datasets]="categoryChartData.datasets"
+                    [labels]="categoryChartData.labels"
+                    [type]="barChartType"
+                    [options]="chartOptions"
+                    [legend]="chartLegend">
+            </canvas>
+            </div>
+          </div>
+</mat-card-content>
     </mat-card>
 
    
@@ -45,13 +49,15 @@
       <mat-card-content>
         <h2>Tickets by Priority</h2>
         <div *ngIf="priorityChartData.datasets[0].data.length > 0; else noDataMessage">
-          <canvas baseChart
-                  [datasets]="priorityChartData.datasets"
-                  [labels]="priorityChartData.labels"
-                  [type]="pieChartType"
-                  [options]="chartOptions"
-                  [legend]="chartLegend">
-          </canvas>
+          <div class="chart-wrapper">
+            <canvas baseChart
+                    [datasets]="priorityChartData.datasets"
+                    [labels]="priorityChartData.labels"
+                    [type]="pieChartType"
+                    [options]="chartOptions"
+                    [legend]="chartLegend">
+            </canvas>
+          </div>
         </div>
       </mat-card-content>
     </mat-card>

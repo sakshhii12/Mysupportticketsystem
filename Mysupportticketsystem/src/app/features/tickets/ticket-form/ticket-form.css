@@ -1,5 +1,29 @@
-form {
+h1[mat-dialog-title] {
+  margin-bottom: 20px;
+  padding-bottom:10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+div[mat-dialog-content] {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 15px;
+  padding-top: 0; 
 }
+.ticket-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.description-field textarea {
+  min-height: 100px;
+  resize: vertical; 
+}
+
+mat-form-field {
+  width: 100%;
+}
+

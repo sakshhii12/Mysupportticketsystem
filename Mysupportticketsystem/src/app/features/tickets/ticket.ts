@@ -38,4 +38,14 @@ export class TicketService {
     const url = `${this.adminApiUrl}/tickets/${ticketId}/assign/${agentEmail}`;
     return this.http.patch(url, {}, { responseType: 'text' });
   }
+  closeTicket(id: number): Observable<any> {
+    return this.http.patch(`${this.apiUrl}/${id}/close`, {}, { responseType: 'text' });
+  }
+  exportTickets(params: HttpParams): Observable<Blob> {
+    // We tell HttpClient to expect a 'blob' (a file) instead of JSON
+    return this.http.get(`${this.apiUrl}/export`, {
+      params: params,
+      responseType: 'blob'
+    });
+  }
 }

@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Assign Ticket to Agent</h1>
+<div mat-dialog-content>
+  <p>Enter the email address of the agent you want to assign this ticket to.</p>
+  <mat-form-field appearance="outline" style="width: 100%;">
+    <mat-label>Agent Email</mat-label>
+    <input matInput [(ngModel)]="agentEmail" placeholder="e.g., agent@example.com" cdkFocusInitial>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-stroked-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="!agentEmail" (click)="onAssign()">Assign</button>
+</div>

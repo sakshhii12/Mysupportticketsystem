@@ -1,18 +1,18 @@
 //import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-//import { Layout } from './layout';
+//import { ConfirmDialogComponent } from './confirm-dialog.component';
 
-//describe('Layout', () => {
-//  let component: Layout;
-//  let fixture: ComponentFixture<Layout>;
+//describe('ConfirmDialogComponent', () => {
+//  let component: ConfirmDialogComponent;
+//  let fixture: ComponentFixture<ConfirmDialogComponent>;
 
 //  beforeEach(async () => {
 //    await TestBed.configureTestingModule({
-//      declarations: [Layout]
+//      declarations: [ConfirmDialogComponent]
 //    })
 //    .compileComponents();
 
-//    fixture = TestBed.createComponent(Layout);
+//    fixture = TestBed.createComponent(ConfirmDialogComponent);
 //    component = fixture.componentInstance;
 //    fixture.detectChanges();
 //  });

@@ -1,0 +1,469 @@
+2025-09-02 10:49:25.953 +05:30 [INF] Roles seeded successfully.
+2025-09-02 10:49:26.199 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 10:49:26.275 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 10:49:26.289 +05:30 [INF] Hosting environment: Development
+2025-09-02 10:49:26.293 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 10:49:27.414 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 115.1859 ms
+2025-09-02 10:49:28.617 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 25.7606 ms
+2025-09-02 10:49:28.643 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 10:49:28.889 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 401 in 251.6170 ms
+2025-09-02 10:49:34.410 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 401 in 6.6599 ms
+2025-09-02 10:49:38.632 +05:30 [INF] HTTP GET /api/tickets responded 401 in 1.8781 ms
+2025-09-02 10:49:45.389 +05:30 [INF] HTTP GET /api/tickets responded 401 in 1.1691 ms
+2025-09-02 10:49:47.623 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.5607 ms
+2025-09-02 10:49:49.694 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 256.9142 ms
+2025-09-02 10:49:49.770 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 56.2772 ms
+2025-09-02 10:49:49.840 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 10:49:49.904 +05:30 [INF] HTTP GET /api/tickets responded 200 in 198.1085 ms
+2025-09-02 10:49:57.185 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 10:49:57.191 +05:30 [INF] HTTP GET /api/tickets responded 200 in 8.3167 ms
+2025-09-02 10:50:04.170 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2334 ms
+2025-09-02 10:50:04.500 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2178 ms
+2025-09-02 10:50:09.308 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 168.3267 ms
+2025-09-02 10:50:09.636 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 10:50:09.660 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 10.5684 ms
+2025-09-02 10:50:09.689 +05:30 [INF] HTTP GET /api/tickets responded 200 in 55.6768 ms
+2025-09-02 10:50:09.911 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 10:50:09.922 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.2241 ms
+2025-09-02 10:50:12.726 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 10:50:12.737 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.3675 ms
+2025-09-02 11:08:18.962 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2144 ms
+2025-09-02 11:08:19.205 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.4228 ms
+2025-09-02 11:08:19.271 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.8507 ms
+2025-09-02 11:08:23.942 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 249.5384 ms
+2025-09-02 11:08:24.263 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:08:24.295 +05:30 [INF] HTTP GET /api/tickets responded 200 in 34.1599 ms
+2025-09-02 11:08:24.312 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 38.6126 ms
+2025-09-02 11:08:24.531 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:08:24.546 +05:30 [INF] HTTP GET /api/tickets responded 200 in 17.7794 ms
+2025-09-02 11:08:24.606 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:08:24.612 +05:30 [INF] HTTP GET /api/tickets responded 200 in 7.3723 ms
+2025-09-02 11:08:25.562 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:08:25.567 +05:30 [INF] HTTP GET /api/tickets responded 200 in 6.2019 ms
+2025-09-02 11:10:18.541 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 19.5969 ms
+2025-09-02 11:16:06.139 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1902 ms
+2025-09-02 11:16:06.384 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2112 ms
+2025-09-02 11:16:06.466 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1202 ms
+2025-09-02 11:16:06.698 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.3481 ms
+2025-09-02 11:16:11.001 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 247.1368 ms
+2025-09-02 11:16:11.317 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:16:11.331 +05:30 [INF] HTTP GET /api/tickets responded 200 in 15.4981 ms
+2025-09-02 11:16:11.341 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 8.1434 ms
+2025-09-02 11:16:11.566 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:16:11.575 +05:30 [INF] HTTP GET /api/tickets responded 200 in 9.0979 ms
+2025-09-02 11:16:11.649 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:16:11.656 +05:30 [INF] HTTP GET /api/tickets responded 200 in 8.8372 ms
+2025-09-02 11:16:11.885 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:16:11.891 +05:30 [INF] HTTP GET /api/tickets responded 200 in 7.9019 ms
+2025-09-02 11:19:07.267 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:19:07.290 +05:30 [INF] HTTP GET /api/tickets responded 200 in 23.9975 ms
+2025-09-02 11:22:46.117 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:22:46.136 +05:30 [INF] HTTP GET /api/tickets responded 200 in 30.1354 ms
+2025-09-02 11:23:15.515 +05:30 [INF] Roles seeded successfully.
+2025-09-02 11:23:15.719 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 11:23:15.779 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 11:23:15.787 +05:30 [INF] Hosting environment: Development
+2025-09-02 11:23:15.790 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 11:23:16.221 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 55.2594 ms
+2025-09-02 11:23:16.414 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5.0180 ms
+2025-09-02 11:23:18.511 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 11:23:18.954 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:23:19.128 +05:30 [INF] HTTP GET /api/tickets responded 200 in 622.4323 ms
+2025-09-02 11:23:29.702 +05:30 [INF] HTTP GET /api/tickets responded 401 in 15.4502 ms
+2025-09-02 11:23:34.484 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 269.7674 ms
+2025-09-02 11:23:34.820 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 11:23:34.856 +05:30 [INF] HTTP GET /api/tickets responded 200 in 44.2039 ms
+2025-09-02 11:23:34.859 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 46.7899 ms
+2025-09-02 11:23:36.492 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 11:23:36.505 +05:30 [INF] HTTP GET /api/tickets responded 200 in 15.0511 ms
+2025-09-02 11:24:35.933 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.6728 ms
+2025-09-02 11:24:36.177 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1832 ms
+2025-09-02 11:24:40.559 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 62.0575 ms
+2025-09-02 11:24:40.880 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:24:40.889 +05:30 [INF] HTTP GET /api/tickets responded 200 in 10.3909 ms
+2025-09-02 11:24:40.910 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 17.0369 ms
+2025-09-02 11:24:41.129 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:24:41.137 +05:30 [INF] HTTP GET /api/tickets responded 200 in 8.9666 ms
+2025-09-02 11:24:42.939 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:24:42.948 +05:30 [INF] HTTP GET /api/tickets responded 200 in 10.9437 ms
+2025-09-02 11:24:52.942 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:24:52.953 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.2479 ms
+2025-09-02 11:26:46.444 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:26:46.492 +05:30 [INF] HTTP GET /api/tickets responded 200 in 50.3261 ms
+2025-09-02 11:26:58.511 +05:30 [INF] Roles seeded successfully.
+2025-09-02 11:26:58.748 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 11:26:58.874 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 11:26:58.881 +05:30 [INF] Hosting environment: Development
+2025-09-02 11:26:58.890 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 11:26:59.053 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 11:26:59.378 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:26:59.505 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 63.1840 ms
+2025-09-02 11:26:59.579 +05:30 [INF] HTTP GET /api/tickets responded 200 in 532.9893 ms
+2025-09-02 11:26:59.614 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.4996 ms
+2025-09-02 11:28:07.778 +05:30 [INF] Roles seeded successfully.
+2025-09-02 11:28:07.971 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 11:28:08.036 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 11:28:08.042 +05:30 [INF] Hosting environment: Development
+2025-09-02 11:28:08.045 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 11:28:09.243 +05:30 [INF] HTTP GET /swagger responded 301 in 4.5952 ms
+2025-09-02 11:28:09.317 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 44.8973 ms
+2025-09-02 11:28:09.421 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 64.0006 ms
+2025-09-02 11:28:09.421 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 64.6383 ms
+2025-09-02 11:28:09.446 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 89.4744 ms
+2025-09-02 11:28:09.577 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.7011 ms
+2025-09-02 11:28:09.584 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.2284 ms
+2025-09-02 11:28:16.263 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 11:28:16.828 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:28:17.113 +05:30 [INF] HTTP GET /api/tickets responded 200 in 856.9941 ms
+2025-09-02 11:34:47.030 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:34:47.114 +05:30 [INF] HTTP GET /api/tickets responded 200 in 139.5598 ms
+2025-09-02 11:36:11.299 +05:30 [INF] Roles seeded successfully.
+2025-09-02 11:36:11.555 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 11:36:11.668 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 11:36:11.671 +05:30 [INF] Hosting environment: Development
+2025-09-02 11:36:11.680 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 11:36:12.464 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 11:36:12.864 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 97.4452 ms
+2025-09-02 11:36:13.027 +05:30 [INF] User de9f5961-dec6-4ca1-9525-67ef41a01a65 is fetching their own tickets.
+2025-09-02 11:36:13.055 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.1688 ms
+2025-09-02 11:36:13.179 +05:30 [INF] HTTP GET /api/tickets responded 200 in 729.0734 ms
+2025-09-02 11:39:07.892 +05:30 [INF] Roles seeded successfully.
+2025-09-02 11:39:08.110 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 11:39:08.184 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 11:39:08.194 +05:30 [INF] Hosting environment: Development
+2025-09-02 11:39:08.199 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 11:39:09.500 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 55.1494 ms
+2025-09-02 11:39:09.613 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.6663 ms
+2025-09-02 11:39:16.892 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 11:39:17.265 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 374.7205 ms
+2025-09-02 11:39:17.406 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 114.9612 ms
+2025-09-02 11:39:19.247 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:39:19.326 +05:30 [INF] HTTP GET /api/tickets responded 200 in 222.4903 ms
+2025-09-02 11:42:36.302 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:42:36.325 +05:30 [INF] HTTP GET /api/tickets responded 200 in 37.9722 ms
+2025-09-02 11:42:42.869 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:42:42.888 +05:30 [INF] HTTP GET /api/tickets responded 200 in 20.7698 ms
+2025-09-02 11:42:54.706 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:42:54.728 +05:30 [INF] HTTP GET /api/tickets responded 200 in 24.1324 ms
+2025-09-02 11:43:17.350 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:43:17.367 +05:30 [INF] HTTP GET /api/tickets responded 200 in 19.0915 ms
+2025-09-02 11:43:32.020 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:43:32.030 +05:30 [INF] HTTP GET /api/tickets responded 200 in 11.3945 ms
+2025-09-02 11:43:36.705 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 11:43:36.714 +05:30 [INF] HTTP GET /api/tickets responded 200 in 10.7755 ms
+2025-09-02 11:59:59.301 +05:30 [INF] Roles seeded successfully.
+2025-09-02 11:59:59.546 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 11:59:59.633 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 11:59:59.645 +05:30 [INF] Hosting environment: Development
+2025-09-02 11:59:59.649 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 12:00:00.382 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 53.0729 ms
+2025-09-02 12:00:00.511 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.6474 ms
+2025-09-02 12:00:02.779 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 12:00:03.027 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 12:00:03.142 +05:30 [INF] HTTP GET /api/tickets responded 200 in 364.5999 ms
+2025-09-02 12:00:08.497 +05:30 [INF] HTTP GET /api/tickets responded 401 in 14.5990 ms
+2025-09-02 12:00:13.728 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 335.9518 ms
+2025-09-02 12:00:13.746 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 12:00:13.774 +05:30 [INF] HTTP GET /api/tickets responded 200 in 34.2956 ms
+2025-09-02 12:00:14.086 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 31.0092 ms
+2025-09-02 12:00:16.023 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 12:00:16.029 +05:30 [INF] HTTP GET /api/tickets responded 200 in 7.9953 ms
+2025-09-02 12:00:21.076 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2373 ms
+2025-09-02 12:00:21.406 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2176 ms
+2025-09-02 12:00:25.984 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 104.0766 ms
+2025-09-02 12:00:26.308 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 12:00:26.390 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 65.6867 ms
+2025-09-02 12:00:26.416 +05:30 [INF] HTTP GET /api/tickets responded 200 in 109.2111 ms
+2025-09-02 12:00:26.569 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 12:00:26.575 +05:30 [INF] HTTP GET /api/tickets responded 200 in 7.9490 ms
+2025-09-02 12:00:27.753 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 12:00:27.763 +05:30 [INF] HTTP GET /api/tickets responded 200 in 11.7534 ms
+2025-09-02 14:55:59.763 +05:30 [INF] Roles seeded successfully.
+2025-09-02 14:56:00.000 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 14:56:00.072 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:56:00.082 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:56:00.086 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 14:56:01.115 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 75.1604 ms
+2025-09-02 14:56:01.248 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 15.3844 ms
+2025-09-02 14:56:06.069 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:56:06.374 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 312.9092 ms
+2025-09-02 14:56:08.069 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 14:56:08.180 +05:30 [INF] HTTP GET /api/tickets responded 200 in 311.6943 ms
+2025-09-02 14:56:13.661 +05:30 [INF] HTTP GET /api/tickets responded 401 in 16.8835 ms
+2025-09-02 14:56:20.392 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 216.9468 ms
+2025-09-02 14:56:20.724 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 2.7054 ms
+2025-09-02 14:56:20.724 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 14:56:20.759 +05:30 [INF] HTTP GET /api/tickets responded 200 in 38.2377 ms
+2025-09-02 14:56:22.806 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 14:56:22.821 +05:30 [INF] HTTP GET /api/tickets responded 200 in 16.6827 ms
+2025-09-02 14:56:36.021 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.3709 ms
+2025-09-02 14:56:36.273 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2108 ms
+2025-09-02 14:56:41.018 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 201.7754 ms
+2025-09-02 14:56:41.340 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 14:56:41.371 +05:30 [INF] HTTP GET /api/tickets responded 200 in 33.2336 ms
+2025-09-02 14:56:41.375 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 21.8755 ms
+2025-09-02 14:56:41.591 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 14:56:41.604 +05:30 [INF] HTTP GET /api/tickets responded 200 in 14.5985 ms
+2025-09-02 14:56:44.851 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 14:56:44.861 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.4543 ms
+2025-09-02 15:02:15.328 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:02:15.403 +05:30 [INF] HTTP GET /api/tickets responded 200 in 87.0268 ms
+2025-09-02 15:04:50.531 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:04:50.582 +05:30 [INF] HTTP GET /api/tickets responded 200 in 56.9618 ms
+2025-09-02 15:04:57.399 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:04:57.411 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.6555 ms
+2025-09-02 15:08:43.624 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:08:43.771 +05:30 [INF] HTTP GET /api/tickets responded 200 in 153.3609 ms
+2025-09-02 15:10:40.895 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:10:40.910 +05:30 [INF] HTTP GET /api/tickets responded 200 in 21.0308 ms
+2025-09-02 15:10:54.354 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:10:54.376 +05:30 [INF] HTTP GET /api/tickets responded 200 in 27.8795 ms
+2025-09-02 15:11:23.730 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:11:23.753 +05:30 [INF] HTTP GET /api/tickets responded 200 in 26.4643 ms
+2025-09-02 15:15:47.107 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:15:47.265 +05:30 [INF] HTTP GET /api/tickets responded 200 in 165.5616 ms
+2025-09-02 15:15:54.100 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:15:54.107 +05:30 [INF] HTTP GET /api/tickets responded 200 in 8.6724 ms
+2025-09-02 15:20:18.413 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:20:18.443 +05:30 [INF] HTTP GET /api/tickets responded 200 in 33.8490 ms
+2025-09-02 15:23:54.669 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:23:54.770 +05:30 [INF] HTTP GET /api/tickets responded 200 in 103.3526 ms
+2025-09-02 15:25:13.609 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:25:13.630 +05:30 [INF] HTTP GET /api/tickets responded 200 in 27.9395 ms
+2025-09-02 15:28:14.206 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:28:14.234 +05:30 [INF] HTTP GET /api/tickets responded 200 in 31.2585 ms
+2025-09-02 15:28:25.073 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:28:25.085 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.9837 ms
+2025-09-02 15:28:37.861 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:28:37.901 +05:30 [INF] HTTP GET /api/tickets responded 200 in 50.3014 ms
+2025-09-02 15:30:01.516 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:30:01.558 +05:30 [INF] HTTP GET /api/tickets responded 200 in 46.0388 ms
+2025-09-02 15:30:45.872 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 15:30:45.925 +05:30 [INF] HTTP GET /api/tickets responded 200 in 57.7921 ms
+2025-09-02 15:31:02.708 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 19.3250 ms
+2025-09-02 15:34:53.145 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 34.6263 ms
+2025-09-02 15:37:36.892 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 27.4694 ms
+2025-09-02 15:37:45.032 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 8.9384 ms
+2025-09-02 15:40:19.349 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 99.6533 ms
+2025-09-02 15:46:14.555 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 167.7432 ms
+2025-09-02 15:47:44.733 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 26.3656 ms
+2025-09-02 15:47:54.695 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 15.0152 ms
+2025-09-02 15:48:34.948 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 27.9951 ms
+2025-09-02 15:48:45.748 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 13.7094 ms
+2025-09-02 15:49:54.527 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 20.2476 ms
+2025-09-02 15:50:05.695 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 13.3758 ms
+2025-09-02 15:50:11.643 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 5.5365 ms
+2025-09-02 15:50:12.601 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 5.1906 ms
+2025-09-02 15:50:16.623 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 6.6259 ms
+2025-09-02 15:50:21.222 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 6.0396 ms
+2025-09-02 16:05:05.303 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:05:05.541 +05:30 [INF] HTTP GET /api/tickets responded 200 in 280.0197 ms
+2025-09-02 16:05:36.501 +05:30 [INF] HTTP GET /api/tickets responded 401 in 1.6716 ms
+2025-09-02 16:05:56.901 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 234.4158 ms
+2025-09-02 16:05:57.239 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:05:57.253 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 22.4692 ms
+2025-09-02 16:05:57.263 +05:30 [INF] HTTP GET /api/tickets responded 200 in 33.3344 ms
+2025-09-02 16:06:07.273 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:06:07.281 +05:30 [INF] HTTP GET /api/tickets responded 200 in 8.8035 ms
+2025-09-02 16:07:13.004 +05:30 [INF] HTTP GET /api/tickets responded 401 in 1.7683 ms
+2025-09-02 16:07:13.267 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2892 ms
+2025-09-02 16:07:18.990 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 153.4525 ms
+2025-09-02 16:07:19.314 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 16:07:19.327 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 14.6732 ms
+2025-09-02 16:07:19.345 +05:30 [INF] HTTP GET /api/tickets responded 200 in 33.3823 ms
+2025-09-02 16:07:19.580 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 16:07:19.598 +05:30 [INF] HTTP GET /api/tickets responded 200 in 22.2111 ms
+2025-09-02 16:07:21.121 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 16:07:21.131 +05:30 [INF] HTTP GET /api/tickets responded 200 in 10.3198 ms
+2025-09-02 16:43:56.356 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 196.4337 ms
+2025-09-02 16:44:09.720 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.4536 ms
+2025-09-02 16:44:10.039 +05:30 [INF] HTTP GET /api/tickets responded 401 in 1.0683 ms
+2025-09-02 16:44:10.057 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2638 ms
+2025-09-02 16:44:15.550 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 151.0489 ms
+2025-09-02 16:44:15.890 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 16:44:15.905 +05:30 [INF] HTTP GET /api/tickets responded 200 in 16.9799 ms
+2025-09-02 16:44:15.914 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 5.9569 ms
+2025-09-02 16:44:15.928 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 16:44:15.934 +05:30 [INF] HTTP GET /api/tickets responded 200 in 7.0934 ms
+2025-09-02 16:44:16.155 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 16:44:16.164 +05:30 [INF] HTTP GET /api/tickets responded 200 in 10.4320 ms
+2025-09-02 16:44:18.954 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 16:44:18.961 +05:30 [INF] HTTP GET /api/tickets responded 200 in 7.9766 ms
+2025-09-02 16:44:21.013 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1189 ms
+2025-09-02 16:44:21.338 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1047 ms
+2025-09-02 16:44:21.369 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1319 ms
+2025-09-02 16:44:21.582 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1173 ms
+2025-09-02 16:44:29.275 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 130.6746 ms
+2025-09-02 16:44:29.605 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:44:29.619 +05:30 [INF] HTTP GET /api/tickets responded 200 in 15.3495 ms
+2025-09-02 16:44:29.655 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 4.6759 ms
+2025-09-02 16:44:29.666 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:44:29.673 +05:30 [INF] HTTP GET /api/tickets responded 200 in 8.0135 ms
+2025-09-02 16:44:29.854 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:44:29.864 +05:30 [INF] HTTP GET /api/tickets responded 200 in 10.6935 ms
+2025-09-02 16:44:29.938 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:44:29.951 +05:30 [INF] HTTP GET /api/tickets responded 200 in 14.1264 ms
+2025-09-02 16:47:39.724 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:47:39.750 +05:30 [INF] HTTP GET /api/tickets responded 200 in 31.5027 ms
+2025-09-02 16:52:39.258 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.4038 ms
+2025-09-02 16:52:39.506 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1879 ms
+2025-09-02 16:52:39.582 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1825 ms
+2025-09-02 16:52:39.839 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1738 ms
+2025-09-02 16:52:39.898 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1023 ms
+2025-09-02 16:52:53.180 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 299.4239 ms
+2025-09-02 16:52:53.203 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:52:53.255 +05:30 [INF] HTTP GET /api/tickets responded 200 in 52.9663 ms
+2025-09-02 16:52:53.261 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:52:53.278 +05:30 [INF] HTTP GET /api/tickets responded 200 in 18.1731 ms
+2025-09-02 16:52:53.283 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:52:53.283 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 6.3922 ms
+2025-09-02 16:52:53.302 +05:30 [INF] HTTP GET /api/tickets responded 200 in 20.1059 ms
+2025-09-02 16:52:53.621 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:52:53.633 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.6343 ms
+2025-09-02 16:52:53.672 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:52:53.687 +05:30 [INF] HTTP GET /api/tickets responded 200 in 15.8970 ms
+2025-09-02 16:52:58.547 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1267 ms
+2025-09-02 16:52:58.868 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.4119 ms
+2025-09-02 16:52:58.906 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1069 ms
+2025-09-02 16:52:59.137 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2643 ms
+2025-09-02 16:52:59.199 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1931 ms
+2025-09-02 16:55:26.420 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 172.6551 ms
+2025-09-02 16:55:26.495 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:55:26.506 +05:30 [INF] HTTP GET /api/tickets responded 200 in 11.9952 ms
+2025-09-02 16:55:26.759 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 8.3482 ms
+2025-09-02 16:55:26.784 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:55:26.790 +05:30 [INF] HTTP GET /api/tickets responded 200 in 6.6035 ms
+2025-09-02 16:55:26.800 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:55:26.805 +05:30 [INF] HTTP GET /api/tickets responded 200 in 5.6632 ms
+2025-09-02 16:55:26.815 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:55:26.819 +05:30 [INF] HTTP GET /api/tickets responded 200 in 6.2726 ms
+2025-09-02 16:55:27.105 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 16:55:27.116 +05:30 [INF] HTTP GET /api/tickets responded 200 in 18.0841 ms
+2025-09-02 16:55:28.721 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1393 ms
+2025-09-02 16:55:28.741 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2240 ms
+2025-09-02 16:55:29.065 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2321 ms
+2025-09-02 16:55:29.088 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.1078 ms
+2025-09-02 16:55:29.331 +05:30 [INF] HTTP GET /api/tickets responded 401 in 0.2190 ms
+2025-09-02 17:03:32.662 +05:30 [INF] Roles seeded successfully.
+2025-09-02 17:03:32.764 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 17:03:32.816 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 17:03:32.821 +05:30 [INF] Hosting environment: Development
+2025-09-02 17:03:32.824 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 17:03:52.707 +05:30 [INF] Roles seeded successfully.
+2025-09-02 17:03:52.925 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 17:03:52.984 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 17:03:52.992 +05:30 [INF] Hosting environment: Development
+2025-09-02 17:03:52.995 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 17:03:54.242 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 72.5711 ms
+2025-09-02 17:03:54.343 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.1128 ms
+2025-09-02 17:03:56.497 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 17:03:56.896 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 400.4740 ms
+2025-09-02 17:03:57.020 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 93.9663 ms
+2025-09-02 17:03:59.382 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 17:03:59.474 +05:30 [INF] HTTP GET /api/tickets responded 200 in 245.3276 ms
+2025-09-02 17:04:14.485 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 85.4448 ms
+2025-09-02 17:04:14.814 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 17:04:14.820 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 7.6852 ms
+2025-09-02 17:04:14.824 +05:30 [INF] HTTP GET /api/tickets responded 200 in 12.3693 ms
+2025-09-02 17:04:16.123 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 17:04:16.130 +05:30 [INF] HTTP GET /api/tickets responded 200 in 8.4514 ms
+2025-09-02 17:55:52.593 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 17:55:52.744 +05:30 [INF] HTTP GET /api/tickets responded 200 in 155.9833 ms
+2025-09-02 19:04:41.990 +05:30 [INF] Roles seeded successfully.
+2025-09-02 19:04:42.197 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 19:04:42.269 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 19:04:42.276 +05:30 [INF] Hosting environment: Development
+2025-09-02 19:04:42.282 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 19:04:43.401 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 61.1213 ms
+2025-09-02 19:04:43.517 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 15.0931 ms
+2025-09-02 19:04:48.166 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 19:04:48.539 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 379.0897 ms
+2025-09-02 19:04:49.965 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 19:04:50.072 +05:30 [INF] HTTP GET /api/tickets responded 200 in 310.5546 ms
+2025-09-02 19:05:17.371 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 208.5270 ms
+2025-09-02 19:05:17.389 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:05:17.413 +05:30 [INF] HTTP GET /api/tickets responded 200 in 30.1725 ms
+2025-09-02 19:05:17.744 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 11.8946 ms
+2025-09-02 19:05:19.888 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:05:19.929 +05:30 [INF] HTTP GET /api/tickets responded 200 in 42.5726 ms
+2025-09-02 19:05:31.455 +05:30 [INF] HTTP PATCH /api/admin/tickets/11/assign/nskf responded 400 in 37.2286 ms
+2025-09-02 19:10:53.823 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 25.8393 ms
+2025-09-02 19:11:19.798 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 101.1292 ms
+2025-09-02 19:11:20.127 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 19:11:20.142 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 15.3707 ms
+2025-09-02 19:11:20.150 +05:30 [INF] HTTP GET /api/tickets responded 200 in 25.0922 ms
+2025-09-02 19:11:20.378 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 19:11:20.384 +05:30 [INF] HTTP GET /api/tickets responded 200 in 6.7030 ms
+2025-09-02 19:17:47.004 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 184.5409 ms
+2025-09-02 19:19:34.442 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 17.3270 ms
+2025-09-02 19:21:52.449 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 58.1354 ms
+2025-09-02 19:22:48.129 +05:30 [INF] Roles seeded successfully.
+2025-09-02 19:22:48.233 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 19:22:48.280 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 19:22:48.284 +05:30 [INF] Hosting environment: Development
+2025-09-02 19:22:48.288 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 19:22:52.044 +05:30 [INF] Roles seeded successfully.
+2025-09-02 19:22:52.261 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 19:22:52.329 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 19:22:52.337 +05:30 [INF] Hosting environment: Development
+2025-09-02 19:22:52.340 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 19:22:53.267 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 47.1440 ms
+2025-09-02 19:22:53.371 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.5313 ms
+2025-09-02 19:22:59.145 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 19:22:59.433 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 294.5662 ms
+2025-09-02 19:23:42.060 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 44.7448 ms
+2025-09-02 19:23:54.108 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 13.3099 ms
+2025-09-02 19:24:01.156 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 7.5866 ms
+2025-09-02 19:25:18.350 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 57.5889 ms
+2025-09-02 19:41:31.034 +05:30 [INF] Roles seeded successfully.
+2025-09-02 19:41:31.418 +05:30 [INF] Now listening on: http://localhost:5085
+2025-09-02 19:41:31.640 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 19:41:31.647 +05:30 [INF] Hosting environment: Development
+2025-09-02 19:41:31.656 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-09-02 19:41:33.107 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 61.4179 ms
+2025-09-02 19:41:33.240 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.9062 ms
+2025-09-02 19:41:45.227 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 19:41:45.844 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 630.4083 ms
+2025-09-02 19:43:50.261 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 1363.6895 ms
+2025-09-02 19:43:50.436 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 54.8125 ms
+2025-09-02 19:43:56.879 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 19:43:57.252 +05:30 [INF] HTTP GET /api/tickets responded 200 in 1076.4043 ms
+2025-09-02 19:47:26.504 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 472.5748 ms
+2025-09-02 19:47:26.564 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 19:47:26.627 +05:30 [INF] HTTP GET /api/tickets responded 200 in 66.9427 ms
+2025-09-02 19:47:26.917 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 38.9562 ms
+2025-09-02 19:47:38.355 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-09-02 19:47:38.410 +05:30 [INF] HTTP GET /api/tickets responded 200 in 59.3066 ms
+2025-09-02 19:48:01.563 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 307.9491 ms
+2025-09-02 19:48:01.954 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:48:01.968 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 14.4604 ms
+2025-09-02 19:48:02.052 +05:30 [INF] HTTP GET /api/tickets responded 200 in 125.9063 ms
+2025-09-02 19:48:02.177 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:48:02.209 +05:30 [INF] HTTP GET /api/tickets responded 200 in 35.8345 ms
+2025-09-02 19:48:05.530 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:48:05.557 +05:30 [INF] HTTP GET /api/tickets responded 200 in 33.6766 ms
+2025-09-02 19:49:00.677 +05:30 [INF] HTTP PATCH /api/admin/tickets/12/assign/aa@gmail.com responded 400 in 150.3683 ms
+2025-09-02 19:49:12.131 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 332.6866 ms
+2025-09-02 19:49:12.478 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 19:49:12.541 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 50.8456 ms
+2025-09-02 19:49:12.607 +05:30 [INF] HTTP GET /api/tickets responded 200 in 134.1509 ms
+2025-09-02 19:49:12.734 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 19:49:12.754 +05:30 [INF] HTTP GET /api/tickets responded 200 in 23.1541 ms
+2025-09-02 19:49:12.935 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 19:49:12.963 +05:30 [INF] HTTP GET /api/tickets responded 200 in 31.7987 ms
+2025-09-02 19:49:17.988 +05:30 [INF] Agent user 03cd95f6-a651-48ec-9795-66d87cdb7165 is fetching their assigned tickets.
+2025-09-02 19:49:18.010 +05:30 [INF] HTTP GET /api/tickets responded 200 in 24.7967 ms
+2025-09-02 19:51:03.694 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 406.9224 ms
+2025-09-02 19:51:03.725 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:51:03.772 +05:30 [INF] HTTP GET /api/tickets responded 200 in 51.2279 ms
+2025-09-02 19:51:04.071 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 14.3671 ms
+2025-09-02 19:51:04.125 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:51:04.145 +05:30 [INF] HTTP GET /api/tickets responded 200 in 50.5497 ms
+2025-09-02 19:51:04.474 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:51:04.503 +05:30 [INF] HTTP GET /api/tickets responded 200 in 31.1161 ms
+2025-09-02 19:51:04.822 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:51:04.853 +05:30 [INF] HTTP GET /api/tickets responded 200 in 34.5112 ms
+2025-09-02 19:51:07.956 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 19:51:07.985 +05:30 [INF] HTTP GET /api/tickets responded 200 in 32.1041 ms
+2025-09-02 20:12:36.657 +05:30 [INF] Admin user 7672b55c-0a15-403c-9c83-2a94105abbc2 is fetching all tickets.
+2025-09-02 20:12:36.801 +05:30 [INF] HTTP GET /api/tickets responded 200 in 150.8948 ms

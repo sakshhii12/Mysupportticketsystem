@@ -716,3 +716,38 @@ System.InvalidOperationException: To use UseSpaStaticFiles, you must first regis
 2025-08-29 19:17:59.862 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 201.5788 ms
 2025-08-29 19:27:10.489 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 24.5776 ms
 2025-08-29 19:31:21.740 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 24.4074 ms
+2025-08-29 20:39:35.016 +05:30 [INF] Roles seeded successfully.
+2025-08-29 20:39:35.328 +05:30 [INF] Now listening on: http://localhost:5085
+2025-08-29 20:39:35.436 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-29 20:39:35.448 +05:30 [INF] Hosting environment: Development
+2025-08-29 20:39:35.457 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-08-29 20:39:36.212 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 117.3939 ms
+2025-08-29 20:39:36.494 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.1123 ms
+2025-08-29 20:39:53.976 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-29 20:39:54.436 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 466.3637 ms
+2025-08-29 20:54:30.677 +05:30 [INF] Roles seeded successfully.
+2025-08-29 20:54:30.874 +05:30 [INF] Now listening on: http://localhost:5085
+2025-08-29 20:54:30.969 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-29 20:54:31.007 +05:30 [INF] Hosting environment: Development
+2025-08-29 20:54:31.009 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-08-29 20:54:54.989 +05:30 [INF] Roles seeded successfully.
+2025-08-29 20:54:55.242 +05:30 [INF] Now listening on: http://localhost:5085
+2025-08-29 20:54:55.347 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-29 20:54:55.358 +05:30 [INF] Hosting environment: Development
+2025-08-29 20:54:55.362 +05:30 [INF] Content root path: C:\Users\SakshiSudrik\Desktop\Code\Mysupportticketsystem\MysupportticketsystemBackend
+2025-08-29 20:54:56.028 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 108.6693 ms
+2025-08-29 20:54:56.145 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.2120 ms
+2025-08-29 20:55:01.155 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-29 20:55:01.636 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 487.8703 ms
+2025-08-29 20:55:04.256 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-08-29 20:55:04.425 +05:30 [INF] HTTP GET /api/tickets responded 200 in 491.4563 ms
+2025-08-29 20:55:06.687 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 24.5896 ms
+2025-08-29 20:55:08.562 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-08-29 20:55:08.587 +05:30 [INF] HTTP GET /api/tickets responded 200 in 39.9455 ms
+2025-08-29 20:55:11.442 +05:30 [INF] HTTP GET /api/dashboard/analytics responded 200 in 10.0208 ms
+2025-08-29 20:55:13.538 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-08-29 20:55:13.562 +05:30 [INF] HTTP GET /api/tickets responded 200 in 25.8638 ms
+2025-08-29 20:55:16.361 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-08-29 20:55:16.381 +05:30 [INF] HTTP GET /api/tickets responded 200 in 23.5991 ms
+2025-08-29 20:55:22.086 +05:30 [INF] User d986532f-a309-4e89-9701-608dd3694ca6 is fetching their own tickets.
+2025-08-29 20:55:22.101 +05:30 [INF] HTTP GET /api/tickets responded 200 in 16.4048 ms
