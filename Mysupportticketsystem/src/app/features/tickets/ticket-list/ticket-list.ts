@@ -12,7 +12,7 @@ import { TicketService } from '../ticket';
 import { TicketForm } from '../ticket-form/ticket-form';
 import { AuthService } from '../../../core/services/auth';
 import { debounceTime } from 'rxjs/operators';
-import { MatButton } from '@angular/material/button';
+//import { MatButton } from '@angular/material/button';
 import { HttpParams } from '@angular/common/http';
 @Component({
   selector: 'app-ticket-list',
@@ -42,12 +42,9 @@ export class TicketList implements OnInit, AfterViewInit {
     private cdr: ChangeDetectorRef 
   ) {
     this.filterForm = this.fb.group({
-      searchTerm: [''],
-      //title: [''], 
+      searchTerm: [''], 
       status: [''],
-      priority: [''],
-      //sortBy: ['createdAt'], 
-      //sortOrder: ['desc'] 
+      priority: ['']
     });
   }
 
@@ -83,15 +80,6 @@ export class TicketList implements OnInit, AfterViewInit {
 
   loadTickets(): void {
     this.isLoading = true;
-    //const formValues = this.filterForm.value;
-    //const apiParams = {
-    //  status: formValues.status,
-    //  priority: formValues.priority,
-    //  searchTerm: formValues.title,
-    //  sortBy: formValues.sortBy, 
-    //  sortOrder: formValues.sortOrder
-    //};
-
     this.ticketService.getTickets(this.filterForm.value).subscribe({
       next: (data: any[]) => {
         this.dataSource = new MatTableDataSource(data);
@@ -160,25 +148,6 @@ export class TicketList implements OnInit, AfterViewInit {
     });
   }
 
-  //assignTicket(ticketId: number): void {
-  //  const agentEmail = prompt('Enter the email of the agent to assign this ticket to:');
-  //  if (agentEmail) {
-  //    this.ticketService.assignTicket(ticketId, agentEmail).subscribe({
-  //      next: () => {
-  //        this.toastr.success('Ticket assigned successfully!');
-  //        this.loadTickets();
-  //      },
-  //      error: (err: any) => {
-  //        let errorMessage = 'Failed to assign ticket.';
-
-  //        if (err.error && typeof err.error === 'string') {
-  //          errorMessage = err.error;
-  //        }
-  //        this.toastr.error(errorMessage, 'Error');
-  //      }
-  //    });
-  //  }
-  //}
   assignTicket(ticketId: number): void {
     const dialogRef = this.dialog.open(AssignAgentDialog, {
       width: '400px',
@@ -198,22 +167,6 @@ export class TicketList implements OnInit, AfterViewInit {
       }
     });
   }
-  //closeTicket(ticket: any): void {
-
-  //  const confirmation = confirm(`Are you sure you want to close ticket #${ticket.id}: "${ticket.title}"?`);
-
-  //  if (confirmation) {
-  //    this.ticketService.closeTicket(ticket.id).subscribe({
-  //      next: () => {
-  //        this.toastr.success('Ticket closed successfully!');
-  //        this.loadTickets();
-  //      },
-  //      error: (err: any) => {
-  //        this.toastr.error('Failed to close the ticket.');
-  //      }
-  //    });
-  //  }
-  //}
   closeTicket(ticket: any): void {
     const dialogRef = this.dialog.open(ConfirmDialog, {
       width: '400px',
@@ -251,8 +204,6 @@ export class TicketList implements OnInit, AfterViewInit {
 
   exportAsCsv(): void {
     const formValues = this.filterForm.value;
-
-    // Use HttpParams for cleaner parameter handling
     let params = new HttpParams();
     if (formValues.status) params = params.append('status', formValues.status);
     if (formValues.priority) params = params.append('priority', formValues.priority);
@@ -260,20 +211,14 @@ export class TicketList implements OnInit, AfterViewInit {
 
     this.ticketService.exportTickets(params).subscribe({
       next: (blob) => {
-        // --- THIS IS THE BROWSER MAGIC ---
-        // 1. Create a new URL that points to the blob data in the browser's memory
         const url = window.URL.createObjectURL(blob);
 
-        // 2. Create a temporary, invisible anchor link element
         const a = document.createElement('a');
         a.href = url;
-        a.download = `TicketExport_${new Date().toISOString().slice(0, 10)}.csv`; // Set the filename
+        a.download = `TicketExport_${new Date().toISOString().slice(0, 10)}.csv`; 
         document.body.appendChild(a);
 
-        // 3. Programmatically "click" the link to trigger the download
         a.click();
-
-        // 4. Clean up by removing the temporary link and revoking the URL
         window.URL.revokeObjectURL(url);
         document.body.removeChild(a);
 
